@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlScripts", "SqlScripts", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30_deneme", "30_deneme\30_deneme.csproj", "{548E7BBD-DEBB-46AB-B25A-E7C82D77372F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30_linq", "30_linq\30_linq.csproj", "{A47DFFB2-3D81-4AD9-A0CC-AB94CDD6125E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{548E7BBD-DEBB-46AB-B25A-E7C82D77372F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{548E7BBD-DEBB-46AB-B25A-E7C82D77372F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{548E7BBD-DEBB-46AB-B25A-E7C82D77372F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A47DFFB2-3D81-4AD9-A0CC-AB94CDD6125E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47DFFB2-3D81-4AD9-A0CC-AB94CDD6125E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47DFFB2-3D81-4AD9-A0CC-AB94CDD6125E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47DFFB2-3D81-4AD9-A0CC-AB94CDD6125E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

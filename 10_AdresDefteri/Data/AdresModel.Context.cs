@@ -28,5 +28,6 @@ namespace _10_AdresDefteri.Data
         public virtual DbSet<Adres> Adresler { get; set; }
         public virtual DbSet<Kisi> Kisiler { get; set; }
         public virtual DbSet<Sehir> Sehirler { get; set; }
+        public virtual DbSet<WebUser> WebUser { get; set; }
     }
 }

@@ -124,6 +124,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Controls\KullaniciControl.ascx" />
     <Content Include="Controls\SehirlerControl.ascx" />
     <Content Include="Data\AdresModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -238,6 +239,7 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Code\AccountManager.cs" />
     <Compile Include="Code\AdresRepo.cs" />
     <Compile Include="Code\KisiRepo.cs" />
     <Compile Include="Code\Tools.cs" />
@@ -248,6 +250,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\KullaniciControl.ascx.cs">
+      <DependentUpon>KullaniciControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\KullaniciControl.ascx.designer.cs">
+      <DependentUpon>KullaniciControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\SehirlerControl.ascx.cs">
       <DependentUpon>SehirlerControl.ascx</DependentUpon>
@@ -279,6 +288,9 @@
     </Compile>
     <Compile Include="Data\KisiExtention.cs" />
     <Compile Include="Data\Sehir.cs">
+      <DependentUpon>AdresModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\WebUser.cs">
       <DependentUpon>AdresModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _10_AdresDefteri.Code;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,7 @@ namespace _10_AdresDefteri.Account
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
         }
 
         protected void btn_Login_Click(object sender, EventArgs e)
@@ -21,8 +23,23 @@ namespace _10_AdresDefteri.Account
             var password = txt_Password.Text;
             var rememberMe = ch_RememberMe.Checked;
 
-            FormsAuthentication.SetAuthCookie(username, rememberMe);
-            Response.Redirect(FormsAuthentication.DefaultUrl);
+            var webuser = AccountManager.Login(username, password);
+            if (webuser != null)
+            {
+                FormsAuthentication.SetAuthCookie(username, rememberMe);
+                Session["UserId"] = webuser.Id;
+                Session["DisplayName"] = webuser.AdiSoyadi;
+                if (!String.IsNullOrEmpty(Tools.QS.Read("ReturnUrl")))
+                    Response.Redirect(Tools.QS.Read("ReturnUrl"));
+                else
+                    Response.Redirect(FormsAuthentication.DefaultUrl);
+            }
+            else
+            {
+                pnl_error.Visible = true;
+            }
+
         }
+
     }
 }

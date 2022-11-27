@@ -7,29 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _10_AdresDefteri
+namespace _10_AdresDefteri.Controls
 {
 
 
-    public partial class SiteMaster
+    public partial class KullaniciControl
     {
 
         /// <summary>
-        /// KullaniciControl control.
+        /// btn_LogOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::_10_AdresDefteri.Controls.KullaniciControl KullaniciControl;
-
-        /// <summary>
-        /// MainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button btn_LogOut;
     }
 }

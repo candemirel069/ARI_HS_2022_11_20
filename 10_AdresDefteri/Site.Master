@@ -1,5 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="_10_AdresDefteri.SiteMaster" %>
 
+<%@ Register Src="~/Controls/KullaniciControl.ascx" TagPrefix="uc1" TagName="KullaniciControl" %>
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -12,9 +15,9 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    
+
 </head>
 <body>
     <form runat="server">
@@ -37,9 +40,10 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-       
+
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
+
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
                         <span class="icon-bar"></span>
@@ -49,11 +53,14 @@
                     <a class="navbar-brand" runat="server" href="~/"><%=_10_AdresDefteri.Code.Tools.Site.ApplicationName%></a>
                 </div>
                 <div class="navbar-collapse collapse">
+
+                    <uc1:KullaniciControl runat="server" id="KullaniciControl" />
+
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/Kisiler/">Kişiler</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul> 
+                    </ul>
                 </div>
             </div>
         </div>
