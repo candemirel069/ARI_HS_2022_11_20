@@ -1,0 +1,16 @@
+﻿.adres-container {
+    background-color: #eee;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.adres-name {
+    font-size: 14px;
+    font-weight: bold
+}
+
+.adres-lines {
+    font-size: 12px;
+    margin-bottom: 10px;
+}

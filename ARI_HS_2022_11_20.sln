@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_AdresDefteri", "10_AdresDefteri\10_AdresDefteri.csproj", "{80163A3A-6733-42FD-BD6A-461D38122AA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20_Tekrar", "20_Tekrar\20_Tekrar.csproj", "{4C740A9F-9ECD-4599-AEF2-09A3D6FC557F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlScripts", "SqlScripts", "{D93A2E61-C538-4F8C-838D-F1BE834A50F3}"
+	ProjectSection(SolutionItems) = preProject
+		SqlScripts\AdresDefteriFull.sql = SqlScripts\AdresDefteriFull.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30_deneme", "30_deneme\30_deneme.csproj", "{548E7BBD-DEBB-46AB-B25A-E7C82D77372F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80163A3A-6733-42FD-BD6A-461D38122AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80163A3A-6733-42FD-BD6A-461D38122AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80163A3A-6733-42FD-BD6A-461D38122AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80163A3A-6733-42FD-BD6A-461D38122AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C740A9F-9ECD-4599-AEF2-09A3D6FC557F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C740A9F-9ECD-4599-AEF2-09A3D6FC557F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C740A9F-9ECD-4599-AEF2-09A3D6FC557F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C740A9F-9ECD-4599-AEF2-09A3D6FC557F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{548E7BBD-DEBB-46AB-B25A-E7C82D77372F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548E7BBD-DEBB-46AB-B25A-E7C82D77372F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548E7BBD-DEBB-46AB-B25A-E7C82D77372F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548E7BBD-DEBB-46AB-B25A-E7C82D77372F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD544081-B347-4DD3-969D-CCCEEEA40A46}
+	EndGlobalSection
+EndGlobal
